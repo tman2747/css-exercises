@@ -74,4 +74,6 @@ ul {
 
 .notifications{
   height: 40px;
+  min-width: 0px;
+  flex: 1;
 }
