@@ -20,6 +20,7 @@
   animation: 2s drop-down 1 alternate;
   display: none;
   will-change: transform;
+  transform-origin: top;
 }
 
 ul.dropdown-menu li:hover {
@@ -33,14 +34,11 @@ ul.dropdown-menu li:hover {
 @keyframes drop-down {
   from {
     transform: scaley(0);
-    transform-origin: top left;
   }
   60%{
-    transform-origin: top left;
     transform: scaleY(1.3);
   }
   to {
-    transform-origin: top left;
     transform: scaley(1);
   }
 }
