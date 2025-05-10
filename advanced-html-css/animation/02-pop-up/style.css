@@ -39,6 +39,9 @@ button {
   pointer-events: none;
   opacity: 0%;
   text-align: center;
+  transition: transform 1s ease-in, opacity 1s ease;
+  transform: translate(-50%, -200%);
+  will-change: transform, opacity;
 }
 
 .popup-modal p {
@@ -56,6 +59,7 @@ button {
 .popup-modal.show {
   opacity: 100%;
   pointer-events: all;
+  transform: translate(-50%, -50%);
 }
 
 .backdrop.show {
